@@ -16,6 +16,7 @@ html {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1;
 }
 
 #nav {
@@ -99,7 +100,38 @@ html {
 
 
 #slider {
+    position: relative;
     margin-top: 46px;
+    padding-top: 50%;
+    background: url('/assets/image/slider/slider1.jpg') top center /cover no-repeat;
+}
+
+#slider .text-content {
+    position: absolute;
+    color: #fff;
+    bottom: 47px;
+    /*
+     solution 1:
+    left: 50%;
+    transform: translateX(-50%);
+    -------
+    solution 2:
+    left: 0px;
+    right: 0px;
+    -------
+    solition 3: */
+    width: 100%;
+    text-align: center;
+}
+
+#slider .text-heading {
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+#slider .text-description {
+    font-size: 15px;
 }
 
 #content {}
