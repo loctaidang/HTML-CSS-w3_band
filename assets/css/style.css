@@ -58,6 +58,26 @@ html {
     text-align: center !important;
 }
 
+.pull-right {
+    float: right;
+}
+
+.btn {
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+    margin-top: 15px;
+
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #ccc;
+    color: #000;
+}
+
 /* Main */
 #main {}
 
@@ -190,7 +210,7 @@ html {
 
 #content .content-section {
     width: 800px;
-    padding: 64px 0;
+    padding: 64px 0 112px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -273,7 +293,7 @@ html {
 /* Places */
 .places-list {
     margin-top: 32px;
-    margin-bottom: 48px;
+
 }
 
 
@@ -307,20 +327,7 @@ html {
     line-height: 1.4;
 }
 
-.place-buy-btn {
-    color: #fff;
-    background-color: #000;
-    text-decoration: none;
-    padding: 11px 16px;
-    display: inline-block;
-    margin-top: 15px;
 
-}
-
-.place-buy-btn:hover {
-    background-color: #ccc;
-    color: #000;
-}
 
 .modal {
     position: fixed;
@@ -444,15 +451,39 @@ html {
     width: 100%;
 }
 
-.contact-form .form-submit-btn {
-    background-color: #000;
-    color: #fff;
-    border: 1px solid #000;
-    padding: 10px 16px;
-    float: right;
+.map-section img {
+    width: 100%;
 }
 
-#footer {}
+
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+
+#footer .socials-list {
+    font-size: 24px;
+
+}
+
+#footer .socials-list a {
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+
+#footer .copyright a:hover,
+#footer .socials-list a:hover {
+    opacity: 0.4;
+}
+
+#footer .copyright {
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#footer .copyright a {
+    color: rgba(0, 0, 0, 0.6);
+}
 
 @keyframes modalFadeIn {
     from {
